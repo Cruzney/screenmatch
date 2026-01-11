@@ -5,10 +5,34 @@ public class Car {
     int year;
     String color;
 
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     void showTecnic(){
-        System.out.println("Model:" + model);
-        System.out.println("Year:" + year);
-        System.out.println("Color:" + color);
+        System.out.println("Model:" + getModel());
+        System.out.println("Year:" + getYear());
+        System.out.println("Color:" + getColor());
     }
 
  int calcAge(){
